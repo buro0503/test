@@ -1,0 +1,142 @@
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v13.0" nonce="lfB0otOX"></script>
+<!DOCTYPE html>
+<html>
+  <head>
+      <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <%= csrf_meta_tags %>
+      <%= csp_meta_tag %>
+
+      <script src="https://kit.fontawesome.com/e17acfdf78.js" crossorigin="anonymous"></script>
+      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <meta name="google-site-verification" content="WlWkr9_XQjufKqjqPLOuJY4ik-U3CJySDeMf4FO-jMI" />
+      <%#= display_meta_tags(default_meta_tags) %>
+
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+      <%= favicon_link_tag("/favicon.ico") %>
+      <link href="<%= image_path("/apple-touch-icon.png") %>" rel="apple-touch-icon" sizes="180x180" type="image/png" />
+      <link href="<%= image_path("/android-touch-icon.png") %>" rel="icon" sizes="192x192" type="image/png" />
+      <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  </head>
+
+  <body>
+    <header>
+     <div class="header-title">
+      <h1>Mandolin Concert Info</h1>
+      </div>
+      
+        <div class="nav">
+    
+         <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+         <input id="drawer_input" class="drawer_hidden" type="checkbox">
+    
+         <!-- ハンバーガーアイコン -->
+         <label for="drawer_input" class="drawer_open"><span></span></label>
+    
+         <!-- メニュー -->
+          <nav class="nav_content">
+            <div class="blank">
+            </div>
+            <div class="nav_list">
+
+
+
+
+                <i class="fa-solid fa-house"></i>
+                <c>投稿一覧</c>
+
+                <i class="fa-regular fa-calendar"></i>
+                <c>カレンダー</c>
+ 
+                <i class="fa-solid fa-users"></i>
+                <c>団体一覧</c>
+
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <c>ログイン</c>
+
+                <i class="fa-brands fa-quora"></i>
+                <c>よくある質問</c>
+
+                <i class="fa-solid fa-envelope"></i>
+                <c>お問い合せ</c>
+
+          <li></li>
+
+          <li><%= link_to "http://twitter.com/share?url=https://dolicon3.fly.dev/&hashtags=マンドリン&hashtags=mandolin&via=dolicon_gm" do %></li>
+            <div class="twitter-button">
+            <i class="fa-brands fa-twitter"></i> twitterで<br>　　共有　　
+            </div>
+            <% end %>
+          <li></li>
+           <li><div class="line-it-button" data-lang="ja" data-type="share-a" data-env="REAL" data-url="https://dolicon3.fly.dev/" data-color="default" data-size="small" data-count="false" data-ver="3" style="display: none;"></div></li>
+           <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+           <li></li>
+           <li><div class="fb-share-button" data-href="https://dolicon3.fly.dev/" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdolicon.herokuapp.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">シェア</a></div></li>
+        </nav>
+      </div>
+
+
+           <div class="sign_out">
+           <ul>
+             <i class="fa-solid fa-house"></i>
+             <br><c>投稿一覧</c>
+
+             <i class="fa-regular fa-calendar"></i>
+             <br><c>カレンダー</c>
+  
+             <i class="fa-solid fa-users"></i>
+             <br><c>団体一覧</c>
+
+              <i class="fa-solid fa-envelope"></i>
+              <br><c>お問い合せ</c>
+
+              <i class="fa-brands fa-quora"></i>
+              <br><c>よくある質問</c>
+
+              <i class="fa-solid fa-arrow-right-to-bracket"></i>
+              <br><c>ログイン</c>
+            </ul>
+           </div>
+
+
+      </div>
+    </header>
+
+    <main>
+      <%= yield %>
+
+    <a href="#" class="gotop">トップへ</a>
+
+
+    
+    </div>
+
+    <div class=newpost>
+
+    </div>
+
+    <div class="close">
+      【重要なお知らせ】<br>
+      サーバーの有料化に伴うサーバー変更のため，URLを変更いたします<br>
+      旧URL https://dolicon.herokuapp.com<br>
+      　　　　　↓<br>
+      新URL https://dolicon3.fly.dev<br>
+      <a href="https://dolicon3.fly.dev">こちら</a>から新サイトに移行できます<br>
+      <br>
+      また，この旧ページは2023年3月31日を持ってアクセス出来なくなりますのでご注意ください．
+    </div>
+
+    </main>
+
+    
+
+    </body>
+</html>
+
+

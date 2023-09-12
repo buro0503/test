@@ -1,0 +1,476 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *= require_tree .
+ *= require_self
+ */
+
+ .mainbox{
+  //display: none;
+ }
+
+ .close{
+  display: none;
+ }
+
+
+ .content .btn
+ * {
+   padding: 0;
+   margin: 0;
+ }
+
+.alert-alert-danger{
+  color: red;
+  font-weight: bold;
+}
+
+ .title{
+  padding: 0em;
+  margin-top: 4em;
+  margin-bottom: 3em;
+  width: fit-content;
+  height: 3em;
+  padding-left: 3em;
+  padding-right: 1em;
+  background-color: #d98e04;
+  border-radius: 0px 20px 20px 0px;
+  box-shadow: 20px -10px teal;
+  }
+
+ body {
+   padding-top: 4em;
+   background-color: #f6e3d0;
+   background-size: cover;
+   min-height: 100vh;
+   position: relative; 
+   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ",
+     Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+ }
+ 
+ body, ol, td {
+   font-family: verdana, arial, helvetica, sans-serif;
+   line-height: 1em;
+  }
+ 
+ 
+ 
+ header {
+   position: fixed;
+   z-index: 10000;
+   display: block;
+   top: 0;
+   width: 100%;
+   box-shadow: 2px 2px 2px rgb(0, 0, 0 / 70%);
+   background-color: #B4CF9E;
+   max-width: 1300px;
+
+   height: 4em;
+   font-weight: bold;
+   display: flex;
+   justify-content: space-between;
+ }
+ header a {  //list&title
+   color: black; 
+   text-decoration: none; 
+ }
+
+ .sign_out,.sign_in{
+   margin-right: 1em;
+ }
+
+ .sign_out i,.sign_in i{
+   padding: 0em 0.7em 0em 0.7em;
+ }
+
+ .sign_out a:hover,.sign_in a:hover{ //上乗ったとき
+   opacity: 0.5;//薄くなる
+ }
+
+ .sign_out c,.sign_in c{
+   font-size: 0.01em;
+ }
+ 
+ .header-title {
+   padding-left: 0.7em;
+   margin-left: 2em;
+   font-size: 1em;
+   display: flex;
+   align-items: center;
+   box-shadow: -15px 0px gold;
+   }
+
+   .header-title :hover{
+    opacity: 0.8;
+   }
+   
+
+ 
+ header ul {
+   text-align:center;
+   display: flex; 
+   font-size: 1.5em;
+   margin-top: 0.5em;
+
+ }
+
+ 
+ .pagenate_end ul {
+  list-style-type: none;
+  font-size: 20px;
+  margin: 20px auto 0;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+.gotop{
+  display: none;
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+  background: #FFF;
+  border: 1px solid #999;
+  padding-top: 30px;
+  text-align: center;
+  letter-spacing: -1px;
+  font-size: 85%;
+  text-decoration: none;
+  color: #333;
+  opacity: 0.5;
+  position: fixed;
+  right:0.5em;
+  bottom: 7em;
+  z-index: 10000;
+}
+.gotop::before{
+  content: "";
+  display: block;
+  border-top: 2px solid #333;
+  border-right: 2px solid #333;
+  width: 25%;
+  height: 25%;
+  top: 25%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+.gotop:hover{
+  opacity: 1;
+}
+
+.newpost{
+//display: none;
+font-size: 3em;
+position:fixed;
+right:0.2em;
+bottom:0.7em;
+transition:1s;
+}
+
+.newpost a:link,.newpost a:visited,.newpost a:hover,.newpost a:active{
+  color: rgb(61, 118, 174);
+}
+
+footer {
+  color: white;
+  height: 30px;
+  background-color: #000;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+footer a{
+  padding-right: 2em;
+  text-decoration: none;
+  color: white;
+
+}
+
+details {
+  border: 1px solid #542D24;
+  border-radius: 4px;
+  padding: .5em .5em 0;
+  background-color: #e7dac3;
+
+}
+
+summary {
+  font-weight: bold;
+  margin: -.5em -.5em 0;
+  padding: .5em;
+}
+
+details[open] {
+  padding: .5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: .5em;
+}
+
+.pagenate_end{
+  margin-bottom: 3em;
+}
+
+.mainbox_edit{
+  margin: 2%;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.tyuuoubox{
+  background-color: #F2F2F2;
+  padding: 3%;
+  max-width: fit-content;
+  margin: auto;
+}
+
+.twitter-button{
+  margin-left: 0.5em;
+}
+
+.balloon1-right {
+  position: relative;
+  display: inline-block;
+  bottom: 0.8em;
+  margin: 1.5em 15px 1.5em 0em;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #fff;
+  font-size: 16px;
+  background: #4270af;
+}
+
+.balloon1-right:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-left: 15px solid #4270af;
+}
+
+.balloon1-right p {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 4000px){
+  header li {
+    list-style: none;
+    margin-right: 2em;
+  }
+
+  .header-title{
+    font-size: 0.6em;
+  }
+  
+  .nav{
+    display: none;
+  }
+
+  .line{
+    font-size: 3em;
+    position:fixed;
+    padding-left:0.2em;
+    bottom:0.7em;
+  }
+
+  .twitter a:link,.twitter a:visited,.twitter a:hover,.twitter a:active{
+    color: rgb(29,161,242);
+  }
+  
+  .twitter{
+    font-size: 3em;
+    position:fixed;
+    left:0.2em;
+    bottom:1.8em;
+  }
+}
+
+@media(max-width:800px){
+
+  header li {
+    list-style: none;
+    margin-right: 0%;
+    font-size: smaller;
+  }
+
+  .line_small{
+    font-size: 3em;
+    position:fixed;
+    padding-left:0.2em;
+    bottom:0.7em;
+  }
+
+  .header-title{
+    font-size: 0.6em;
+  }
+
+  .nav{
+    display: none;
+  }
+}
+
+@media(max-width:550px){
+
+.line,.twitter{
+  display: none;
+}
+
+  header li {
+    list-style: none;
+    margin-right: 0%;
+    font-size: smaller;
+  }
+
+  .sign_in a,.sign_out a{
+    font-size: smaller;
+    white-space: nowrap;
+    padding-top: 0.2em;
+  }
+
+.nav{
+  display: contents;
+}
+
+.sign_in, .sign_out{
+  display: none;
+}
+
+  
+  /* ここから下がハンバーガーメニューに関するCSS */
+    
+  /* チェックボックスを非表示にする */
+  .drawer_hidden {
+    display: none;
+  }
+  
+  /* ハンバーガーアイコンの設置スペース */
+  .drawer_open {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    z-index: 10001;
+  }
+
+  
+  /* ハンバーガーメニューのアイコン */
+  .drawer_open span,
+  .drawer_open span:before,
+  .drawer_open span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #333;
+    transition: 0.5s;
+    position: absolute;
+  }
+  
+  /* 三本線の一番上の棒の位置調整 */
+  .drawer_open span:before {
+    bottom: 8px;
+  }
+  
+  /* 三本線の一番下の棒の位置調整 */
+  .drawer_open span:after {
+    top: 8px;
+  }
+
+  .drawer_input{
+  }
+  
+  /* アイコンがクリックされたら真ん中の線を透明にする */
+  #drawer_input:checked ~ .drawer_open span {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+  #drawer_input:checked ~ .drawer_open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+  
+  #drawer_input:checked ~ .drawer_open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+    
+  /* メニューのデザイン*/
+  .nav_content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 101%; /* メニューを画面の外に飛ばす */
+    z-index: 99;
+    transition: .5s;
+
+  }
+  
+  /* メニュー黒ポチを消す */
+  .nav_list {
+    list-style: none;
+    padding-top: 1em;
+    height: 100%;
+    background-color:rgba(255,255,255,0.8);
+    box-shadow: -2px 2px 2px rgb(0, 0, 0 / 40%);
+
+  }
+  
+  .nav_list a{
+    font-size: 1.1em;
+    margin-left: 0.5em;
+  }
+  
+  /* アイコンがクリックされたらメニューを表示 */
+  #drawer_input:checked ~ .nav_content {
+    left: 65%;/* メニューを画面に入れる */
+  }
+
+  #drawer_input:checked ~ .outside {
+    right: 35%;
+    background-color: #542D24;
+  }
+
+  .blank{
+    padding: 2em;
+    background-color: grba(0,0,0,1);
+    box-shadow: 2px 2px 2px rgb(0, 0, 0 / 70%);
+  }
+}
+
